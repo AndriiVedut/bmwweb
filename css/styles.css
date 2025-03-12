@@ -1,0 +1,642 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html { 
+	
+        font-size: 20px;
+        scroll-behavior: smooth;
+}
+
+body { 
+font-family: "Gelasio", serif;
+ 
+       margin: 50px auto;
+       color: #000;
+       line-height: 1.5;
+       background: rgb(255,255,255);
+} 
+
+/* Navbar Styles */
+
+nav.navbar {
+	
+	padding: 1px; /*Creates space around the navbar*/
+	background-color: #FFFFFF !important; /*Sets the background colour*/
+}
+
+nav.navbar .navbar-nav { /*put all thelinks together*/ 
+	padding-top: 1px;
+	padding-left: 20px;
+}
+
+
+nav.navbar .navbar-nav a.nav-link {
+    padding: 20px 20px; /*space around link*/
+    color: #333333; /*color change*/
+    text-align: center; /*text to the left*/  /* исправлено на text-align */
+    font-size: 1rem; /*font size*/
+}
+
+nav.navbar .navbar-nav a.nav-link:hover {
+	color: #1D26CD; /*cgange the color of the links*/
+	
+}
+
+
+nav.navbar .navbar-nav .active a.nav-link {
+	font-weight: bold;
+	color: #000000;
+    background: transparent; /*background color*/
+	border-bottom: 4px solid #000000; /*change the color of the boder link*/
+}
+
+nav.navbar a.navbar-brand {
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	max-width: 100%;
+}
+
+
+
+/* Search Form Styles */
+
+form.form-inline{
+	width: 35%; /*sets the web bar*/
+	position: relative;
+	
+}
+
+
+form.form-inline input[type=search] {
+	border-radius: 5px;
+	width: 65%;
+	font-size: 0.85rem;
+	border: 1px solid #000000;
+    margin: 0px;
+	
+	background: transparent;
+	max-width: 250px;
+	padding: 15px; /* creates space inside search box, one number - the same number for each side */ 
+	color: #000000;
+}
+
+form.form-inline input[type=search]::placeholder {
+	color: #000000;
+}
+
+form.form-inline button[type=submit] {
+	border: 1px solid #000000;
+	color: #000000;
+	width: 30%;
+	border-radius: 5px;
+	padding: 8px 0 7px 0;/*create space inside box, top right bottom lefr*/
+	font-size: 0.85rem;
+	
+	margin-left: -6px;
+	max-width: 100px;
+}
+
+form.form-inline button.btn:hover {
+	background: transparent;
+	color: blue; /*change the color of the search*/
+	margin-top: -20px;
+}
+
+/* Text Styles */
+
+
+       h1 {
+       font-size: 2.5rem;
+       font-variant: normal;
+       }
+       
+       h2 {
+       font-size: 1.5rem;
+       }
+ 
+       h3 {
+       font-size: 1.25rem;
+       }
+
+h1, h2  {
+       color: #1D26CD;
+       margin: 0 0 1rem 0; 
+}
+
+h4 {
+	text-align: center;
+	color: #000000;
+	font-size: 1.5rem;
+}
+
+
+
+
+p {
+	
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+	
+}
+
+ul li { 
+   font-size: 0.95rem;
+   margin: 0 0 0.9rem 0;
+   
+}
+
+.bold {
+        font-weight: bold;
+}
+
+
+.italic {
+         font-style: italic;
+}
+
+.cColour {
+         color: #1D26CD;
+}
+
+/*Link Styles*/
+a:link, a:active, a:visited {
+             color:#1D26CD;
+             text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/*Generic*/
+.backgroundC {
+
+     background: rgb(255, 255, 255);
+}
+
+.left {
+       float: left;
+       margin: 0 1rem 1rem 0;
+}
+
+.right { 
+          float: right;
+          margin: 0 0 1rem 1rem;
+
+}
+
+/*Image Styles*/
+
+img, video {
+
+         width: 100%;
+         height: auto;
+         margin-bottom:1rem;
+	
+
+}
+
+#carouselExamplelndicators1 img {
+        max-width: 100%;
+        height: auto;
+}
+
+/*Footer Styles */ 
+
+footer {
+	
+	width: 100%;
+}
+
+footer h2 {}
+
+.footerL {
+	float: left;
+	padding: 0;
+	border-right: 1px solid #999; /*crates solid grey border in the end of the page*/
+}
+
+.footerR {
+	float: right;
+	text-align: right;/*put the text on the right side of the page*/
+	padding: 0;
+}
+
+.footerR p.bmw {
+	background: url("../images/bmwlogo.gif") no-repeat right;/*sets a background images fpr example linkedin picture*/
+	padding-right: 35px;
+	display: inline-block;
+	
+}
+
+/* Comment form style */
+
+#frmComment {
+  width: 80%; /* Reduced the width a little for aesthetics */
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners of the form */
+ 
+}
+
+/* Styles for titles and descriptions */
+
+#frmComment label {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333; 
+  font-weight: bold; 
+}
+
+/* Hover effect on titles */
+#frmComment label:hover span {
+  color: #1D26CD; 
+}
+
+/* Text input fields */
+#frmComment input,
+#frmComment textarea {
+  float: left;
+  width: calc(100% - 20px); /* Reduce the width for the padding */
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); 
+  background: #ffffff; 
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on text fields */
+#frmComment input:hover,
+#frmComment textarea:hover {
+  border-color: #1D26CD; 
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); 
+}
+
+/* Styles for dropdown lists */
+#frmComment select {
+  width: calc(100% - 20px); 
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #333;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#frmComment input[type=submit] {
+    padding: 12px 2px; /*Internal indents for convenience of reading the text on the button*/
+    text-align: center;
+    width: 240px;
+    float: left;
+    color: #FFFFFF;
+    background: #1D26CD;
+    border: 1px solid #000000;
+    margin: 0px 0 0 0%;/*to move the button to the left by 32%*/
+    border-radius: 5px;/*rounded corners for better design*/
+    cursor: pointer;
+    height: 45px;
+}
+
+
+
+/* Button hover effect */
+#frmComment input[type="submit"]:hover {
+  background: #1D26CD; 
+  box-shadow: 0 8px 15px rgba(0, 86, 179, 0.4); 
+}
+
+/* Styles for the date input field */
+#frmComment input[type="date"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+	/*This media query is applied if the device screen width is less than or equal to 992px. 
+It is used to adapt styles on devices with smaller screens, such as tablets. */
+	nav.navbar .navbar-nav {
+		padding-left: 0;
+	}
+	nav.navbar .navbar-nav a.nav-link {
+		padding: 8px 20px 8px 0;
+		width: 50%;
+	}
+	form.form-inline {
+		width: 100%;
+	}
+	form.form-inline input[type=search] {
+		width: 90%;
+	}
+	form.form-inline button[type=submit] {
+		/*This style hides the form submit button*/
+		display: none;
+		width: 0;
+	}
+
+	.footerL {
+		border-right: none;
+		border-bottom: 1px solid #999;
+		padding-left: 1rem;
+		
+	}
+	
+	.footerR {
+		text-align: right;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+		
+	}
+	.footerR p.linked {
+		background: url("../images/linkedin.png") no-repeat 75px 0;
+		padding-right: 30px;
+	}
+}
+	
+
+
+/* Styles for Table  */
+.table-section {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Table headers */
+.table-section th {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  padding: 12px 8px;
+  border-bottom: 2px solid #000;
+  text-align: center;
+}
+
+/* Table cells */
+.table-section td {
+  font-size: 0.9rem;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.table-section tr:nth-of-type(even) {
+  background-color: rgb(250, 250, 250);
+}
+
+.table-section tr:nth-of-type(even):hover {
+  background-color: rgb(200, 200, 200);
+  cursor: pointer;
+}
+
+.table-section tr:nth-of-type(odd) {
+  background-color: rgb(230, 230, 230);
+}
+
+
+.table-section tr:nth-of-type(odd):hover {
+  background-color: rgb(190, 190, 190);
+  cursor: pointer;
+}
+
+
+.table-container {
+  margin-top: 10px; 
+}
+
+
+
+/* Styles for the second text */
+
+.text-container-2 {
+  margin-top: 40px; 
+  text-align: left; 
+  font-size: 18px;
+  color: #555;
+}
+
+.text-container-1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/* Styles for blocks with photos, text and tables */
+.block-section {
+  display: block;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+/* Photo with reduced width */
+.block-section .image-block img {
+  width: 80%; 
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px; 
+}
+
+/* Additional class for padding the second image */
+.image-block.second-image {
+  margin-top: 40px; 
+}
+
+/* Styles for mobile devices (less than 768px) */
+@media screen and (max-width: 768px) {
+ 
+  .table-section,
+  .table-section thead,
+  .table-section tbody,
+  .table-section th,
+  .table-section td,
+  .table-section tr,
+  .table-section caption {
+    display: block;
+  }
+
+
+  .table-section thead tr {
+    display: none;
+  }
+
+
+  .table-section td {
+    border: none;
+    position: relative;
+    text-align: right;
+    font-size: 0.9rem;
+    border-bottom: 2px solid white;
+  }
+
+  
+  .table-section td:before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 25%;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  
+  .table-section td:nth-of-type(4) {
+    border-bottom: 4px solid white;
+  }
+
+
+  .table-section td:nth-of-type(1):before {
+    content: "Specification"; 
+  }
+
+  .table-section td:nth-of-type(2):before {
+    content: "Details"; 
+  }
+
+  
+  .table-section td:nth-of-type(odd) {
+    background-color: #f2f2f2;
+  }
+
+ 
+  .table-section td:nth-of-type(odd):before {
+    content: "Specification"; 
+  }
+
+  .table-section td:nth-of-type(even):before {
+    content: "Details"; 
+  }
+  
+ 
+  .table-section td {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+
+/* Image styles */
+.photo-container {
+  margin-top: 20px; 
+  text-align: center; 
+}
+
+#img {
+
+  height: auto;
+	width: 550px;
+	
+	
+}
+
+/* Styles for the second block of text */
+.text-container-2 {
+  margin-top: 40px; 
+  text-align: left; 
+  font-size: 18px;
+  color: #555;
+}
+
+.text-container-1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* General style for text blocks */
+.text-block  {
+	text-align: left;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+}
+
+/* Headings in text blocks */
+.text-block h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styles for numbered lists */
+.text-block ol {
+  padding-left: 25px; /* Slight indentation for the first list */
+  margin: 0;
+  list-style: none;
+  counter-reset: list-counter;
+}
+
+.text-block ol li {
+  margin: 8px 0;
+  padding: 8px 8px 8px 35px; /* More space for text */
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.text-block ol li::before {
+  content: counter(list-counter) ".";
+  counter-increment: list-counter;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  width: 20px; 
+}
+
+/* Special style for nested elements */
+.text-block ol dl {
+  margin: 5px 0;
+  padding-left: 0;
+  font-style: normal;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Animation when hovering over a list item */
+.text-block ol li:hover {
+  background-color: #f7f7f7;
+  border-color: #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
