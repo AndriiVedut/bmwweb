@@ -59,13 +59,7 @@ nav.navbar a.navbar-brand {
 	max-width: 100%;
 }
 
-.navbar-logo {
-  height: 10px; /* Фиксированная высота */
-  width: auto; /* Ширина будет автоматически подстраиваться под пропорции */
-  border-radius: 5px; /* Закругленные углы */
-  max-width: 100%; /* Ограничение по ширине, чтобы логотип не растягивался */
-  object-fit: contain; /* Сохраняет пропорции изображения */
-}
+
 
 /* Search Form Styles */
 
