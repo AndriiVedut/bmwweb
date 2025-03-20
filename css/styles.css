@@ -375,13 +375,7 @@ It is used to adapt styles on devices with smaller screens, such as tablets. */
 	}
 }
 	
-/* Адаптация для Retina-дисплеев */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min-resolution: 192dpi) {
-  .navbar-logo {
-    content: url('images/bmw32@2x.jpg'); /* Изображение с удвоенным разрешением */
-  }
-}
+
 
 /* Styles for Table  */
 .table-section {
