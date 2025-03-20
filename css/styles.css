@@ -637,79 +637,7 @@ It is used to adapt styles on devices with smaller screens, such as tablets. */
   transition: all 0.2s ease-in-out;
 }
  
-/* Адаптация для iPhone 12 Pro и других современных моделей */
-@media screen and (max-width: 390px) {
-    html {
-        font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
-    }
 
-    body {
-        margin: 20px auto; /* Уменьшаем отступы */
-    }
-
-    nav.navbar .navbar-nav a.nav-link {
-        padding: 10px 10px; /* Уменьшаем отступы для ссылок в навигации */
-        font-size: 0.9rem; /* Уменьшаем размер шрифта */
-    }
-
-    form.form-inline {
-        width: 100%; /* Увеличиваем ширину формы поиска */
-    }
-
-    form.form-inline input[type=search] {
-        width: 80%; /* Увеличиваем ширину поля поиска */
-        font-size: 0.8rem; /* Уменьшаем размер шрифта */
-    }
-
-    form.form-inline button[type=submit] {
-        width: 20%; /* Уменьшаем ширину кнопки поиска */
-        font-size: 0.8rem; /* Уменьшаем размер шрифта */
-    }
-
-    h1 {
-        font-size: 2rem; /* Уменьшаем размер заголовка */
-    }
-
-    h2 {
-        font-size: 1.25rem; /* Уменьшаем размер заголовка */
-    }
-
-    h3 {
-        font-size: 1rem; /* Уменьшаем размер заголовка */
-    }
-
-    p {
-        font-size: 0.9rem; /* Уменьшаем размер текста */
-    }
-
-    .table-section th,
-    .table-section td {
-        font-size: 0.8rem; /* Уменьшаем размер шрифта в таблице */
-        padding: 8px; /* Уменьшаем отступы в таблице */
-    }
-
-    .text-container-1,
-    .text-container-2 {
-        font-size: 0.9rem; /* Уменьшаем размер текста */
-    }
-
-    .block-section .image-block img {
-        width: 100%; /* Увеличиваем ширину изображений */
-    }
-
-    .footerL,
-    .footerR {
-        float: none; /* Убираем плавающие элементы для футера */
-        text-align: center; /* Центрируем текст */
-        border-right: none; /* Убираем границу */
-        padding: 10px 0; /* Добавляем отступы */
-    }
-
-    .footerR p.bmw {
-        background: none; /* Убираем фоновое изображение */
-        padding-right: 0; /* Убираем отступы */
-    }
-}
 
 
 
